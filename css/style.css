@@ -1,0 +1,406 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+    box-sizing: border-box;
+}
+
+/**********************************/
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2C2B30;
+}
+
+header {
+    background-color: #2C2B30;
+    width: 100%;
+
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 999;
+}
+
+h1, h2, h3, h4, p {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: calc(15px + 5vw);
+    /* margin-bottom: 30px; */
+    font-weight: 750;
+}
+
+h2 {
+    font-size: calc(15px + 3vw);
+    /* font-size: 32px; */
+    /* margin-bottom: 30px; */
+    font-weight: 750;
+}
+
+h3 {
+    font-size: 23px;
+    /* margin-bottom: 30px;  */
+    font-weight: 550;
+    letter-spacing: 1px;
+}
+
+p{
+    font-size: 20px;
+    /* margin-bottom: 20px; */
+    font-weight: 450;
+}
+
+hr {
+    border-bottom: 2px solid #D6D6D6;
+    border-top: 2px solid #2C2B30;
+    border-radius: 3px;
+    width: 80%;
+    margin: auto;
+}
+
+img {
+    margin: 50px;
+    flex-grow: 1;  
+}
+
+/**********************************/
+
+.container {
+    /* background-color: lightcoral; */
+    width: 80%;
+    margin: auto;
+
+    display: flex;
+    /* align-items: center; */
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.button {
+    color: #2C2B30;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: transparent;
+
+    max-width: 40%;
+    /* width: 200px; */
+
+    border: 2px solid #2C2B30;
+    border-radius: 7px;
+
+    text-align: center;
+    padding: 40px 2px;
+
+    flex-grow: 1; 
+    /* margin: 0px 3px; */
+}
+
+.section {
+    padding: 100px 0px;
+}
+
+/* .text {} */
+
+/**********************************/
+
+.button:hover {
+    color: #D6D6D6;
+    background-color: #2C2B30;
+}
+
+/**********************************/
+
+header .container {
+    padding: 20px 0px;
+    /* padding: 1.5vh 0vh;; */
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo-container, #nav-links {
+    display: flex;
+}
+
+header .container h1 {
+    color: white;
+    font-size: 36px;
+    /* background-color: lightblue; */
+}
+
+nav {
+    /* background-color: lightgreen;  */
+    /* flex-wrap: wrap; */
+}
+
+#nav-links { /* TODO */
+    list-style: none; 
+
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.nav-link  { /* todo */
+    color: #D6D6D6;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+
+    margin: 20px;
+}
+
+/**********************************/
+
+#intro {
+    width: 100%;
+    height: 110vh;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+       
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#intro .container #intro-content {
+    /* color: #2C2B30; */
+    width: 50%;
+    /* background-color: magenta; */
+    /* flex-wrap: wrap; */
+}
+
+#intro .container #intro-content #buttons {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: row;    */
+    flex-wrap: wrap;
+    /* background-color: tomato; */
+}
+
+/* #intro .container #intro-content #buttons a { */
+    /* color: #2C2B30; */
+    /* text-decoration: none; */
+    /* text-transform: uppercase; */
+    /* background-color: transparent; */
+
+    /* max-width: 40%; */
+    /* width: 200px; */
+
+    /* border: 2px solid #2C2B30; */
+    /* border-radius: 7px; */
+
+    /* text-align: center; */
+    /* padding: 40px 2px; */
+
+    /* flex-grow: 1;  */
+    /* margin: 0px 3px; */
+/* } */
+
+/* #intro .container #intro-content #buttons .whitespace{
+    max-width: 10%;
+    flex:1; 
+} */
+
+/****************************************/
+
+#about .container {
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+}
+
+/****************************************/
+
+#about .container #mission-content{
+    /* background-color: thistle;  */
+    /* m,issing space between pic and when wher */
+    /* padding: 100px 0px; */
+    display: flex;
+    justify-content: space-between; /* fix jusity */
+    /* align-items: stretch; */
+    flex-wrap: wrap;
+}
+
+#about .container #mission-text{ /* toodo picture not veritcal aligned*/
+    /* width: 50%; */
+    /* height: auto; */
+    /* margin: 20px 0px; */
+    /* margin: 50px 0px 0px 0px; */
+    width: 50%;
+    flex-grow: 1;  
+    /* background-color: turquoise; */
+}
+/* todo image not sized right, aspect keep change, should be like belpw*/
+
+/************************************/
+
+#about .container #for-who-content {
+    /* background-color: purple; m,issing space between pic and when wher */
+    display: flex;
+    /* padding: 100px 0px; */
+    /* flex-direction: row; */
+    justify-content: space-between; /* fix jusity */
+    flex-wrap: wrap;
+    /* width: 100%; */
+}
+
+#about .container img{
+    /* max-width: 50%; */ /* TODO: weird margin when small vp */
+    /* height: auto; */
+    /* margin: 20px; fix centering */
+    /* flex-grow: 1; */
+    /* width: 50%; */
+    /* background-color: violet; */
+    /* max-width: 350px; */
+    /* flex-grow: 1; */
+}
+
+#about .container #for-who-text {
+    /* background-color: red; m,issing space between pic and when wher */
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: left; */
+    /* padding: 100px 0px; */
+    /* flex-direction: row; */
+    /* justify-content: space-between; fix jusity */
+    /* flex-wrap: wrap; */
+    width: 50%;
+    flex-grow: 1;
+}
+
+/* #about .container h2 {
+    text-transform: none;
+} */
+
+/************************************/
+
+#about .container #event-content {
+    /* max-width: 50%; */ /* TODO: weird margin when small vp */
+    /* background-color: teal; */
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#about .container #event-content h2, #about .container #event-content h3, #about .container #event-content p{
+    /* max-width: 50%; */ /* TODO: weird margin when small vp */
+    /* background-color: yellow; */
+    text-align: center;
+}
+
+#about .container #event-content h2 {
+    /* background-color: yellowgreen; */
+    /* padding: 50px; */
+    /* margin: 0px; */
+    /* text-transform: none; */
+}
+
+#about .container #event-content h3 {
+    /* padding: 30px 0px 30px 0px; */
+    /* background-color: sandybrown; */
+    /* margin: 0px; */
+}
+
+#about .container #event-content p {
+    /* margin: 0px; */
+    /* padding: 40px; */
+    /* background-color: sienna; */
+}
+
+#about .container #event-content #event-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about .container #event-content .button {
+    /* flex: 1; */
+    /* width: 30%;
+    max-width: 500px;
+    height: auto; */
+    /* margin: 100px; */
+    
+    width: 30%;
+    height: auto;
+
+    min-width: 150px;
+    min-height: auto;
+    max-width: 600px;
+    max-height: auto;
+
+    /* background-image: url(../images/winter-break.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden; */
+
+    /* border: none; */
+    /* border-radius: 0px; */
+}
+
+/************************************/
+
+#team .container {
+    justify-content: center;
+    align-items: column;
+}
+
+#team .container #members{
+    /* background-color: aqua;  */
+    /* m,issing space between pic and when wher */
+    /* padding: 100px 0px; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.member {
+    color: #2C2B30;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: transparent;
+
+    width: 200px;
+    height: 350px;
+
+    border: 2px solid #2C2B30;
+    border-radius: 7px;
+
+    text-align: center;
+    padding: 40px 2px;
+
+    /* flex-grow: 1;  */
+    margin: 10px;
+    /* margin: 0px 3px; */
+}
+
+/************************************/
+
+footer {
+    color: #D6D6D6;
+    text-align: center;
+    background-color: #2C2B30;
+
+    padding: 20px 0px;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+address p {
+    font-size: 15px;
+    text-decoration: none;
+    /* text-align: center; */
+}

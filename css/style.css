@@ -1,0 +1,339 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+    box-sizing: border-box;
+}
+
+/**********************************/
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2C2B30;
+}
+
+header {
+    background-color: #2C2B30;
+    width: 100%;
+
+    /* position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 999; */
+}
+
+h1, h2, h3, h4, p {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: calc(15px + 5vw);
+    font-weight: 750;
+}
+
+h2 {
+    font-size: calc(15px + 3vw);
+    font-weight: 750;
+}
+
+h3 {
+    font-size: 23px;
+    font-weight: 550;
+    letter-spacing: 1px;
+}
+
+p{
+    font-size: 20px;
+    font-weight: 450;
+}
+
+hr {
+    border-bottom: 2px solid #D6D6D6;
+    border-top: 2px solid #2C2B30;
+    border-radius: 3px;
+    width: 80%;
+    margin: auto;
+}
+
+img {
+    /* display: block;
+    width: 100%;
+    height: auto; */
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+
+    min-width: 300px;
+    min-height: 300px;
+
+    padding: 20px;
+    flex-grow: 1;  
+
+    /* visibility: hidden; */
+}
+
+/**********************************/
+
+.container {
+    /* background-color: lightcoral; */
+    width: 80%;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.button {
+    color: #2C2B30;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: transparent;
+
+    /* min-width: 100px; */
+    /* min-height: 200px; */
+    max-width: 200px;
+    /* max-height: 400px; */
+    /* width: 200px; */
+
+    border: 2px solid #2C2B30;
+    border-radius: 7px;
+
+    text-align: center;
+    /* padding: 40px 2px; */
+    padding: 40px 20px;
+
+    flex-grow: 1; 
+}
+
+.section {
+    padding: 100px 0px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.half {
+    /* background-color: blue; */
+    /* padding: 100px; */
+    width: 50%;
+    flex-grow: 1;  
+}
+
+/**********************************/
+
+.button:hover {
+    color: #D6D6D6;
+    background-color: #2C2B30;
+}
+
+/**********************************/
+
+header .container {
+    padding: 20px 0px;
+    /* padding: 1.5vh 0vh;; */
+    background-color: blue;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo-container, #nav-links {
+    display: flex;
+}
+
+header .container h1 {
+    color: white;
+    font-size: 36px;
+    /* background-color: lightblue; */
+}
+
+nav {
+    /* background-color: lightgreen;  */
+    /* flex-wrap: wrap; */
+}
+
+#nav-links { /* TODO */
+    list-style: none; 
+
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav-link  { /* todo */
+    color: #D6D6D6;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+
+    margin: 20px;
+}
+
+/**********************************/
+
+#intro {
+    width: 100%;
+    height: 110vh;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+       
+    min-height: 700px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* #intro .container #intro-content { */
+    /* color: #2C2B30; */
+    /* width: 50%; */
+    /* background-color: magenta; */
+    /* flex-wrap: wrap; */
+/* } */
+
+#intro .container #intro-content #buttons {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: tomato;
+}
+
+/****************************************/
+
+/* #about .container { */
+    /* display: flex; */
+    /* align-items: center; */
+    /* flex-direction: column; */
+/* } */
+
+/****************************************/
+
+/* #about .container #mission-content{ */
+    /* background-color: thistle;  */
+    /* m,issing space between pic and when wher */
+    /* padding: 100px 0px; */
+    /* display: flex; */
+    /* justify-content: space-between; fix jusity */
+    /* align-items: stretch; */
+    /* flex-wrap: wrap; */
+/* } */
+
+/* #about .container #mission-text{ toodo picture not veritcal aligned */
+    /* width: 50%;
+    flex-grow: 1;   */
+    /* background-color: turquoise; */
+/* } */
+/* todo image not sized right, aspect keep change, should be like belpw*/
+
+/************************************/
+
+/* #about .container #event-content { */
+    /* max-width: 50%; */ /* TODO: weird margin when small vp */
+    /* background-color: teal; */
+    /* display: flex; */
+    /* justify-items: center; */
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+/* } */
+
+/* #about .container #event-content h2, #about .container #event-content h3, #about .container #event-content p{ */
+    /* max-width: 50%; */ /* TODO: weird margin when small vp */
+    /* background-color: yellow; */
+    /* text-align: center; */
+/* } */
+
+/* #about .container #event-content #event-links { */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+/* } */
+
+/* #about .container #event-content .button { */
+    /* flex: 1; */
+    /* width: 30%;
+    max-width: 500px;
+    height: auto; */
+    /* margin: 100px; */
+    
+    /* width: 30%; */
+    /* height: auto; */
+
+    /* min-width: 150px; */
+    /* min-height: auto; */
+    /* max-width: 600px; */
+    /* max-height: auto; */
+
+    /* background-image: url(../images/winter-break.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden; */
+
+    /* border: none; */
+    /* border-radius: 0px; */
+/* } */
+
+/************************************/
+
+#team .container {
+    justify-content: center;
+    align-items: column;
+}
+
+#team .container #members{
+    /* background-color: aqua;  */
+    /* m,issing space between pic and when wher */
+    /* padding: 100px 0px; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.member {
+    color: #2C2B30;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: transparent;
+
+    width: 200px;
+    height: 350px;
+
+    border: 2px solid #2C2B30;
+    border-radius: 7px;
+
+    text-align: center;
+    padding: 40px 2px;
+
+    /* flex-grow: 1;  */
+    margin: 10px;
+    /* margin: 0px 3px; */
+}
+
+/************************************/
+
+footer {
+    color: #D6D6D6;
+    text-align: center;
+    background-color: #2C2B30;
+
+    padding: 20px 0px;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+address p {
+    font-size: 15px;
+    text-decoration: none;
+}

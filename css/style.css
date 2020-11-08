@@ -233,7 +233,7 @@ nav {
 #intro {
     width: 100%;
     height: 110vh;
-    background: url(../images/shapes2.jpg);
+    background: url(../images/shapes.jpg);
     /* background: linear-gradient( to right,rgba(1, 34, 93, 0.8) 0%,rgba(1, 34, 93, 0.4) 50%, rgba(92,153,238,.1) 80% ), url(../images/bogota_edited.jpg); */
     background-size: cover;
     background-position: center;

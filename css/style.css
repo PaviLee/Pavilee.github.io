@@ -29,7 +29,7 @@ h1, h2, h3, h4, p {
 
 h1 {
     font-size: calc(15px + 5vw);
-    font-weight: 750;
+    font-weight: 800;
     color: #F69031;
 }
 
@@ -53,6 +53,9 @@ h4 {
 }
 
 p {
+    /* color: #0A0A0A;
+    background-color: #D6D6D6; */
+
     font-size: 20px;
     font-weight: 450;
 }
@@ -60,7 +63,7 @@ p {
 hr {
     width: 100%;
 
-    border: 1px solid #F3F3F3;
+    border: 1px solid #D6D6D6;
     border-radius: 3px;
 }
 
@@ -115,7 +118,7 @@ img {
 }
 
 .button {
-    color: #F3F3F3;
+    /* color: #F3F3F3; */
     text-decoration: none;
     text-transform: uppercase;
     background-color: transparent;
@@ -126,7 +129,7 @@ img {
     /* max-height: 400px; */
     /* width: 200px; */                 
 
-    border: 2px solid #F3F3F3;
+    border: 2px solid #D6D6D6;
     border-radius: 7px;
 
     text-align: center;
@@ -142,23 +145,23 @@ img {
 }
 
 .parallax {
-    background: url(../images/ny.jpg);
+    background: url(../images/mountains.jpg);
     background-size: cover;
     background-attachment: fixed;
     /* width: 100vh; */
-    height: 40vh;
+    height: 100vh;
     /* background: pink; */
 }
 
 /**********************************/
 
 .nav-link:hover {
-    color: #00B7FF;
+    color: #F69031;
 }
 
 .button:hover {
-    color: #F3F3F3;
-    background-color: #2C2B30;
+    color: #2C2B30;
+    background-color: #D6D6D6;
 }
 
 /**********************************/
@@ -218,7 +221,7 @@ nav {
 }
 
 .nav-link  { /* todo */
-    color: #F3F3F3;
+    color: #D6D6D6;
     font-size: 18px;
     text-decoration: none;
     text-transform: uppercase;
@@ -233,7 +236,7 @@ nav {
     width: 100%;
     height: 110vh;
     /* top: 10vh; */
-    background-image: url(../images/ny.jpg);
+    background-image: url(../images/mountains.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -250,11 +253,15 @@ nav {
     flex-direction: column;
 }
 
-#mission {
+#intro p {
+    color: #0A0A0A;
+    background-color: #D6D6D6;
+}
+/* #mission {
     background: url(../images/freeway.jpg);
     background-size: cover;
     background-attachment: fixed;
-}
+} */
 
 /****************************************/
 
@@ -280,7 +287,7 @@ nav {
     width: 250px;
     height: 350px;
 
-    border: 2px solid #F3F3F3;
+    border: 2px solid #D6D6D6;
     border-radius: 7px;
 
     padding: 20px 10px; /* change */

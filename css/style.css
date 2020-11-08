@@ -350,14 +350,12 @@ footer p, footer a, address p {
 }
 
 /************************************/
-.bootcamp-info {
-    align-items: flex-start;
+.overviews {
     background-color: white;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
 }
 
-.bootcamp-info .content {
+.overviews .content {
     padding-top: 70px;
     padding-bottom: 70px;
     width: 100%;
@@ -367,20 +365,20 @@ footer p, footer a, address p {
     align-items: flex-start;
 }
 
-.bootcamp-info section{
+.overviews section{
     width: 50%;
 }
 
-.bootcamp-info  b{
+.overviews  b{
     color: black;
 }
 
-.bootcamp-info p{
+.overviews p{
     color: rgb(49, 49, 49);
     text-align: justify;
 }
 
-.bootcamp-info img{
+.overviews img{
     width: 35%;
     margin-top: auto;
     margin-bottom: auto;

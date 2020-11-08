@@ -424,3 +424,41 @@ footer p, footer a, address p {
 #infosession .button{
     align-items: flex-start;
 }
+
+
+/******************************/
+#about {
+    background-color: white;
+    flex-direction: column;
+}
+
+.aboutus {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+#about p{
+    color: rgb(49, 49, 49);
+    text-align: justify;
+}
+
+#team{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    text-align: left;
+}
+.member{
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.andres{
+    background-image: url('../images/andres.jpg');
+    background-size: cover;
+    background-position: center;
+}
+

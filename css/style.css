@@ -4,10 +4,10 @@
 * {
     color: #D6D6D6;
     text-decoration: none; /* move */
+
+    font-family: 'Lato', sans-serif;
+
     font-style: normal;
-
-    font-family: 'Big Shoulders Stencil Text', cursive;
-
     /* background: #0A0A0A; */
 
     margin: 0px;

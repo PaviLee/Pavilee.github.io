@@ -2,11 +2,11 @@
 /* because of image */
 
 * {
-    color: #F3F3F3;
+    color: #D6D6D6;
     text-decoration: none; /* move */
     font-style: normal;
 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Big Shoulders Stencil Text', cursive;
 
     /* background: #0A0A0A; */
 
@@ -30,17 +30,20 @@ h1, h2, h3, h4, p {
 h1 {
     font-size: calc(15px + 5vw);
     font-weight: 750;
+    color: #F69031;
 }
 
 h2 {
     font-size: calc(15px + 3vw);
     font-weight: 750;
+    color: #F69031;
 }
 
 h3 {
     font-size: 23px;
     font-weight: 550;
     letter-spacing: 1px;
+    color: #00B7FF;
 }
 
 h4 {
@@ -148,6 +151,10 @@ img {
 }
 
 /**********************************/
+
+.nav-link:hover {
+    color: #00B7FF;
+}
 
 .button:hover {
     color: #F3F3F3;

@@ -144,12 +144,20 @@ img {
 }
 
 .parallax {
-    background: url(../images/shapes.jpg);
     background-size: cover;
     background-attachment: fixed;
     /* width: 100vh; */
     height: 100vh;
     /* background: pink; */
+    width: 100%;
+    background: linear-gradient( to right,rgba(1, 34, 93, 0.7) 0%,rgba(62, 89, 134, 0.4) 50%, rgba(92,153,238,.1) 80% ), url(../images/highway.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* position: relative;
+    overflow: hidden; */
+       
+    opacity: 0.9;
 }
 
 /**********************************/
@@ -167,7 +175,7 @@ img {
 
 header {
     /* background-color: rosybrown; */
-    background-color: rgba(9, 24, 61, 0.7) ;
+    background-color: rgba(36, 36, 36, 0.9) ;
 
 
     position: fixed;
@@ -382,4 +390,37 @@ footer p, footer a, address p {
     width: 35%;
     margin-top: auto;
     margin-bottom: auto;
+}
+/**************/
+#infosession {
+    align-items: flex-start;
+}
+#infosession section {
+    width: 30%;
+    margin-left: 5%;
+}
+
+#infosession h1 {
+    font-size: calc(10px + 4vw);
+    color: #fff;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+#infosession h3 {
+    font-size: calc(3px + 1.5vw);
+    color: #fff;
+}
+
+#infosession p {
+    color: #fff;
+}
+
+#infosession .buttons{
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+#infosession .button{
+    align-items: flex-start;
 }

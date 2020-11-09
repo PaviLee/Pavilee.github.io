@@ -1,29 +1,18 @@
-/* Wwird thing when shirnk down .flex-row-wrap gets wider */
-/* because of image */
-
 * {
-    color: #D6D6D6;
+
     text-decoration: none; /* move */
-
     font-family: 'Titillium Web', sans-serif;
-
     font-style: normal;
-
     margin: 0px;
     padding: 0px;
-
     box-sizing: border-box;
 }
 
-/**********************************/
+/***********************************************************************************************/
 
-body {
-    background: #0A0A0A;
-}
 
 h1, h2, h3, h4, p {
     margin-bottom: 10px;
-    /* background: blue; */
 }
 
 h1 {
@@ -46,91 +35,67 @@ h3 {
 }
 
 h4 {
-    font-size: 20px;
+    font-size: 23px;
     font-weight: 500;
     letter-spacing: 1px;
 }
 
 p {
-    /* color: #0A0A0A;
-    background-color: #D6D6D6; */
-
     font-size: 20px;
     font-weight: 450;
+    color: rgb(49, 49, 49);
+    text-align: justify;
+
 }
+
+b{
+    color: black;
+}
+
 
 hr {
     width: 100%;
-
     border: 1px solid #D6D6D6;
     border-radius: 3px;
-}
-
-img {
-    /* object-fit: contain; */
-    /* max-width: 700px; */
-    /* max-height: 100%; */
-
-    /* min-width: 500px; */
-    /* min-height: 500px; */
-    display: block;
-    width: 100%;
-    min-width: 400px;
-    height: auto;
-}
-
-/**********************************/
-
-.container {
-    /* background-color: lightcoral; */
-    width: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.content {
-    /* background-color: pink; */
-    /*width: 80%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    padding: 200px 0px;*/
 }
 
 .uppercase {
     text-transform: uppercase;
 }
 
+.parallax {
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient( to right,rgba(1, 34, 93, 0.7) 0%,rgba(62, 89, 134, 0.4) 50%, rgba(92,153,238,.1) 80% ), url(../images/highway.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .buttons {
     width: 100%;
     display: flex;
-    /*justify-content: space-evenly;*/
     flex-wrap: wrap;
 }
 
 .button {
-    /* color: #F3F3F3; */
     text-decoration: none;
     text-transform: uppercase;
     background-color: transparent;
 
     min-width: 300px;
-    /* min- height: 200px; */
-    max-width: 300px;
-    /* max-height: 400px; */
-    /* width: 200px; */                 
+    max-width: 300px;             
 
     border: 3px solid white;
     border-radius: 7px;
 
     text-align: center;
-    /* padding: 40px 2px; */
     padding: 20px 10px;
 
     flex-grow: 1; 
@@ -139,130 +104,37 @@ img {
     color: white;
 }
 
-.text-center {
-    text-align: center;
-}
-
-.parallax {
-    background-size: cover;
-    background-attachment: fixed;
-    /* width: 100vh; */
-    height: 100vh;
-    /* background: pink; */
-    width: 100%;
-    background: linear-gradient( to right,rgba(1, 34, 93, 0.7) 0%,rgba(62, 89, 134, 0.4) 50%, rgba(92,153,238,.1) 80% ), url(../images/highway.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    /* position: relative;
-    overflow: hidden; */
-       
-    opacity: 0.9;
-}
-
-/**********************************/
-
-.nav-link:hover {
-    color: rgb(83, 155, 226);
-}
-
 .button:hover {
     color: #2C2B30;
     background-color: white;
 }
-
-/**********************************/
-
-header {
-    /* background-color: rosybrown; */
-    background-color: rgba(36, 36, 36, 0.9) ;
-
-
-    position: fixed;
-    z-index: 99;
-
-    width: 100%;
-    /* height: 10vh; */
-
-    padding: 20px 0px;
-
-    display: flex; 
-    justify-content: center;
-	align-items: center;
-}
-
-#header-container {
-    /* background-color: white;  */
-
-    width:90%;
-    /* height: 10vh; */
-
-    display: flex;
-    justify-content: center;
-	align-items: center;
-}
-
-#logo-container {
-    /* background-color: purple; */
-    display: flex;
-    justify-content: flex-start;
-    flex-grow: 1;
-}
-
-#logo-container h3{
-    margin: 0;
-}
-
-nav {
-    /* background-color: orange; */
-    flex-grow: 1;
- }
-
-#nav-links { /* TODO */
-    list-style: none; 
-
-    display: flex;
-    justify-content: space-between; 
-    /* flex-wrap: wrap; */
-}
-
-.nav-link  { /* todo */
-    color: #D6D6D6;
-    font-size: 18px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 500;
-
-    /* margin: 20px; */
-}
-
-/**********************************/
+/***********************************************************************************************/
 
 #intro {
     width: 100%;
-    height: 110vh;
+    height: 110vh;    
+    min-height: 700px;
+
     background: url(../images/bogota_edited.jpg);
     background: linear-gradient( to right,rgba(1, 34, 93, 0.8) 0%,rgba(1, 34, 93, 0.4) 50%, rgba(92,153,238,.1) 80% ), url(../images/bogota_edited.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    /* position: relative;
-    overflow: hidden; */
-       
-    opacity: 0.9;
-
-    min-height: 700px;
 
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
-}
-
-
-#intro .container {
     align-items: flex-start;
+
 }
+
+#intro .logo{
+    position: absolute;
+    left: 3%;
+    top: 100px;
+    width: 50%;
+}
+
 #intro section {
     width: 40%;
     margin-left: 5%;
@@ -284,86 +156,14 @@ nav {
     color: #fff;
 }
 
-#intro .buttons{
-    align-items: flex-start;
-    margin-top: 20px;
-}
+/***********************************************************************************************/
 
-#intro .button{
-    align-items: flex-start;
-}
-
-
-
-/****************************************/
-
-.tiles {
-    width: 100%;
-    /* need to fix */
-    /* need to add to margin blovck */
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-
-    /* background-color: aquamarine; */
-}
-
-
-.tile {
-    color: #2C2B30;
-    text-align: center;
-    background-color: transparent;
-
-    width: 250px;
-    height: 350px;
-
-    border: 2px solid #D6D6D6;
-    border-radius: 7px;
-
-    padding: 20px 10px; /* change */
-    margin: 20px;
-    /* flex-grow: 1; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.profile-pic {
-    background-color: pink;
-    width: 100%;
-    border-radius: 100%;
-    padding: 100px;
-}
-
-/************************************/
-
-footer {
-    /* font-size: 10px; */
-    /* color: #D6D6D6; */
-    text-align: center;
-    /* background-color: #2C2B30; */
-
-    padding: 20px 0px;
-
-    justify-content: space-between;
-    align-items: center;
-}
-
-footer p, footer a, address p {
-    font-size: 16px;
-    /* color: #D6D6D6; make black default and white font class */
-}
-
-/************************************/
 .overviews {
     background-color: white;
     flex-direction: column;
 }
 
-.overviews .content {
+.overviews div {
     padding-top: 70px;
     padding-bottom: 70px;
     width: 100%;
@@ -377,21 +177,12 @@ footer p, footer a, address p {
     width: 50%;
 }
 
-.overviews  b{
-    color: black;
-}
-
-.overviews p{
-    color: rgb(49, 49, 49);
-    text-align: justify;
-}
-
 .overviews img{
     width: 35%;
     margin-top: auto;
     margin-bottom: auto;
 }
-/**************/
+/***********************************************************************************************/
 #infosession {
     align-items: flex-start;
 }
@@ -426,39 +217,77 @@ footer p, footer a, address p {
 }
 
 
-/******************************/
+/***********************************************************************************************/
 #about {
     background-color: white;
     flex-direction: column;
 }
 
 .aboutus {
-    width: 100%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
-#about p{
-    color: rgb(49, 49, 49);
-    text-align: justify;
-}
 
 #team{
-    width: 100%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px;
     text-align: left;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
-.member{
+
+.tiles {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.tile {
+    color: #2C2B30;
+    text-align: center;
+    background-color: transparent;
+
+    width:  250px;
+    height: 350px;
+
+    
+    border: 2px solid #D6D6D6;
+    border-radius: 7px;
+
+    margin: 20px;
+    /* flex-grow: 1; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    justify-content: flex-start;
 }
 
-.andres{
-    background-image: url('../images/andres.jpg');
-    background-size: cover;
-    background-position: center;
+.profile-pic {
+    width: 86%;
+    border-radius: 100%;
 }
 
+/***********************************************************************************************/
+
+footer {
+    text-align: center;
+
+    padding: 20px 0px;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    padding-top: 30px;
+    margin-left: 5%;
+    font-size: 16px;
+}

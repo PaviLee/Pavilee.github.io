@@ -16,9 +16,22 @@ h1, h2, h3, h4, p {
 }
 
 h1 {
-    font-size: calc(15px + 5vw);
+    font-size: calc(10px + 4vw);
     font-weight: 800;
-    color: #F69031;
+    color: white;
+    text-align: left;
+}
+
+@media (max-width: 800px){
+    h1{
+        font-size: calc(20px + 5vw);
+    }
+}
+
+@media (max-width: 600px){
+    h1{
+        font-size: calc(23px + 6vw);
+    }
 }
 
 h2 {
@@ -27,11 +40,36 @@ h2 {
     color: #F69031;
 }
 
+@media (max-width: 800px){
+    h2{
+        font-size: calc(20px + 4vw);
+    }
+}
+
+@media (max-width: 600px){
+    h2{
+        font-size: calc(23px + 4vw);
+    }
+}
+
 h3 {
-    font-size: 23px;
     font-weight: 550;
     letter-spacing: 1px;
-    color: #00B7FF;
+    
+    font-size: calc(3px + 1.5vw);
+    color: #fff;
+}
+
+@media (max-width: 800px){
+    h3{
+        font-size: calc(8px + 2vw);
+    }
+}
+
+@media (max-width: 600px){
+    h3{
+        font-size: calc(10px + 3vw);
+    }
 }
 
 h4 {
@@ -41,11 +79,39 @@ h4 {
 }
 
 p {
-    font-size: 20px;
+    font-size: calc(2px + 1.4vw);
     font-weight: 450;
     color: rgb(49, 49, 49);
     text-align: justify;
+}
 
+@media (max-width: 800px){
+    p{
+        font-size: calc(5px + 1.8vw);
+    }
+}
+
+@media (max-width: 600px){
+    p{
+        font-size: calc(7px + 2.3vw);
+    }
+}
+
+a { 
+    font-size: calc(2px + 1.4vw);
+    font-weight: 450;
+}
+
+@media (max-width: 800px){
+    a{
+        font-size: calc(5px + 1.8vw);
+    }
+}
+
+@media (max-width: 600px){
+    a{
+        font-size: calc(7px + 2.3vw);
+    }
 }
 
 b{
@@ -68,6 +134,9 @@ hr {
     background-attachment: fixed;
     height: 100vh;
     width: 100%;
+
+    min-height: 40vw;
+
     background: linear-gradient( to right,rgba(1, 34, 93, 0.7) 0%,rgba(62, 89, 134, 0.4) 50%, rgba(92,153,238,.1) 80% ), url(../images/highway.jpg);
     background-size: cover;
     background-position: center;
@@ -89,8 +158,7 @@ hr {
     text-transform: uppercase;
     background-color: transparent;
 
-    min-width: 300px;
-    max-width: 300px;             
+    width: 80%;
 
     border: 3px solid white;
     border-radius: 7px;
@@ -98,9 +166,6 @@ hr {
     text-align: center;
     padding: 20px 10px;
 
-    flex-grow: 1; 
-    font-size: 20px;
-    font-weight: 400;
     color: white;
 }
 
@@ -113,7 +178,7 @@ hr {
 #intro {
     width: 100%;
     height: 110vh;    
-    min-height: 700px;
+    min-height: 60vw;
 
     background: url(../images/bogota_edited.jpg);
     background: linear-gradient( to right,rgba(1, 34, 93, 0.8) 0%,rgba(1, 34, 93, 0.4) 50%, rgba(92,153,238,.1) 80% ), url(../images/bogota_edited.jpg);
@@ -122,17 +187,43 @@ hr {
     background-attachment: fixed;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
     align-items: flex-start;
 
 }
 
+@media (max-width: 900px){
+    #intro {
+        background-position: right;
+    }
+}
+
+@media (max-width: 600px){
+    #intro {
+        background-position: 80%;
+    }
+}
+
+
+
 #intro .logo{
-    position: absolute;
-    left: 3%;
-    top: 100px;
+    margin-left: 3%;
+    margin-top: 100px;
     width: 50%;
+}
+
+@media (max-width: 800px){
+    #intro .logo{
+        width: 70%;
+    }
+}
+
+
+@media (max-width: 600px){
+    #intro .logo{
+        width: 90%;
+    }
 }
 
 #intro section {
@@ -140,21 +231,23 @@ hr {
     margin-left: 5%;
 }
 
-#intro h1 {
-    font-size: calc(10px + 4vw);
-    color: #fff;
-    text-align: left;
-    margin-bottom: 10px;
+@media (max-width: 800px){
+    #intro section{
+        width: 60%;
+    }
 }
 
-#intro h3 {
-    font-size: calc(3px + 1.5vw);
-    color: #fff;
+@media (max-width: 600px){
+    #intro section{
+        width: 80%;
+    }
 }
 
 #intro p {
     color: #fff;
 }
+
+
 
 /***********************************************************************************************/
 
@@ -177,6 +270,18 @@ hr {
     width: 50%;
 }
 
+@media (max-width: 800px){
+    .overviews section{
+        width: 90%
+    }
+
+    .overviews img{
+        display: none;
+    }
+}
+
+
+
 .overviews img{
     width: 35%;
     margin-top: auto;
@@ -191,16 +296,16 @@ hr {
     margin-left: 5%;
 }
 
-#infosession h1 {
-    font-size: calc(10px + 4vw);
-    color: #fff;
-    text-align: left;
-    margin-bottom: 10px;
+@media (max-width: 800px){
+    #infosession section{
+        width: 50%;
+    }
 }
 
-#infosession h3 {
-    font-size: calc(3px + 1.5vw);
-    color: #fff;
+@media (max-width: 600px){
+    #infosession section{
+        width: 70%;
+    }
 }
 
 #infosession p {
@@ -208,13 +313,13 @@ hr {
 }
 
 #infosession .buttons{
-    align-items: flex-start;
     margin-top: 20px;
 }
 
 #infosession .button{
     align-items: flex-start;
 }
+
 
 
 /***********************************************************************************************/
@@ -231,6 +336,14 @@ hr {
     padding-bottom: 70px;
 }
 
+.aboutus a{
+    text-decoration: none;
+    color: #0051ff;
+}
+
+.aboutus a:hover{
+    color: #3978ff;
+}
 
 #team{
     width: 90%;
@@ -245,7 +358,7 @@ hr {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-wrap: wrap;
 }
 
@@ -273,6 +386,12 @@ hr {
 .profile-pic {
     width: 86%;
     border-radius: 100%;
+}
+
+@media (min-width: 1700px){
+    .tile p{
+        font-size: 25px;
+    }
 }
 
 /***********************************************************************************************/

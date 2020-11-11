@@ -202,7 +202,7 @@ hr {
 @media (max-width: 600px){
     #intro {
         background-position: 80%;
-        background-attachment: local;
+        background-attachment: scroll;
     }
 }
 

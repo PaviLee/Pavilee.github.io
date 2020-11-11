@@ -305,7 +305,7 @@ hr {
 
 @media (max-width: 600px){
     #infosession {
-        background-attachment: local;
+        background-attachment: scroll;
     }
     #infosession section{
         width: 70%;

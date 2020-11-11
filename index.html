@@ -17,7 +17,7 @@
 <body>
 
     <main>
-        <div id="intro">
+        <div id="intro" class = 'intro'>
             <img src="images/innovacol.png" alt="" class='logo'>
             <section>
                 <h1 class="uppercase">Coding Bootcamp 2021</h1>
@@ -154,5 +154,34 @@
             <p>COPYRIGHT &#169; InnovaCol All Rights Reserved.</p>
     </footer>
 </body>
+
+<script>
+    
+function is_iOS() {
+  return [
+    'iPad Simulator',
+    'iPhone Simulator',
+    'iPod Simulator',
+    'iPad',
+    'iPhone',
+    'iPod'
+  ].includes(navigator.platform)
+  // iPad on iOS 13 detection
+  || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+}
+//Fix bakcgorund attachment bug on mobile(occurs on iOS)
+//var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
+/*There are bugs on iOS 10 and below*/
+/*Does not work on Nokia Lumina*/
+var fixed_backgrounds = ['parallax','intro']
+  if (is_iOS()){
+      for ( var i =0; i<fixed_backgrounds.length; i++){
+      background =document.getElementsByClassName(fixed_backgrounds[i])
+      if(background.length > 0)
+        background[0].style.backgroundAttachment='local'
+      }
+}
+</script>
+
 
 </html>

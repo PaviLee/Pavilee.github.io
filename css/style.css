@@ -202,6 +202,7 @@ hr {
 @media (max-width: 600px){
     #intro {
         background-position: 80%;
+        background-attachment: local;
     }
 }
 
@@ -303,6 +304,9 @@ hr {
 }
 
 @media (max-width: 600px){
+    #infosession {
+        background-attachment: local;
+    }
     #infosession section{
         width: 70%;
     }
